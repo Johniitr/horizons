@@ -7,7 +7,8 @@ library(horizons)
 
 wpath <-  '/home/ecor/local2/data/sims/rendena' 
 
-
+# Make sure you a 'geotop.proj' file in OGC WKT 2 format in your geotop project.
+# Note: You can create a proj file in above mentioned format for your epsg here: https://epsg.io
 dem <- get.geotop.inpts.keyword.value("DemFile",raster=TRUE,wpath=wpath)
 
 nmeteo <- get.geotop.inpts.keyword.value("NumberOfMeteoStations",numeric=TRUE,wpath=wpath)
